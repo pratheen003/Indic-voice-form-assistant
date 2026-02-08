@@ -16,3 +16,8 @@ text = pytesseract.image_to_string(
 
 print("\n--- OCR Output ---")
 print(text)
+
+with open("data/ocr_raw.txt", "w", encoding="utf-8") as f:
+    f.write(text)
+
+print("OCR text saved to data/ocr_raw.txt")
